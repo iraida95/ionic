@@ -14,6 +14,31 @@
 
 
 <ion-content padding>
+  <ion-item>
+    <ion-label>Origen:</ion-label>
+    <ion-select [(ngModel)]="introducidos.origen" name="origen">
+      <div *ngFor="let campo of campos ">
+        <ion-option  [value]="campo.origen">{{campo.origen}}</ion-option>
+      </div>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Destino:</ion-label>
+    <ion-select [(ngModel)]="introducidos.destino" name="destino">
+      <div *ngFor="let campo of campos ">
+        <ion-option  [value]="campo.destino">{{campo.destino}}</ion-option>
+      </div>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ida:</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="introducidos.salida"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Vuelta:</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="introducidos.llegada"></ion-datetime>
+  </ion-item>
+  <button ion-button (click)="buscar()">Buscar</button>
 
 </ion-content>
 

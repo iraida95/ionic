@@ -6,6 +6,7 @@ import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import {  SearchPage   }from '../search/search';
 import{ MisviajesPage } from '../misviajes/misviajes'
+import {FirebaseListObservable, AngularFire} from "angularfire2";
 
 @Component({
   templateUrl: 'tabs.html'

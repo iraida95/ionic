@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=WebStorm
+Icon=/home/iraida/Escritorio/WebStorm-163.7743.51/bin/webstorm.svg
+Exec="/home/iraida/Escritorio/WebStorm-163.7743.51/bin/webstorm.sh" %f
+Comment=The Drive to Develop
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-webstorm
